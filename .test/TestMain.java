@@ -29,7 +29,7 @@ public class TestMain {
         }
         try
         {
-            assertEquals(2421832, method.invoke(new Object[] {8, 26,1918}));
+            assertEquals(2421832, method.invoke(null, new Object[] {8, 26,1918}));
         } catch (IllegalAccessException e)
         {
             throw new RuntimeException(e);
@@ -60,7 +60,7 @@ public class TestMain {
         }
         try
         {
-            assertEquals(2459254, method.invoke(new Object[] {2,8,2021}));
+            assertEquals(2459254, method.invoke(null, new Object[] {2,8,2021}));
         } catch (IllegalAccessException e)
         {
             throw new RuntimeException(e);
